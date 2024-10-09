@@ -1,0 +1,263 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: black;
+}
+
+.main{
+    background-image: url("Assets/hero.jpg");
+    background-repeat: no-repeat;
+    background-size: max(1400px,100vw);
+    background-position: top;
+    height : 70vh;
+    position:relative;
+}
+.main .box{
+    height :70vh;
+    width: 100%;
+    opacity:0.56;
+    position: absolute;
+    top: 0;
+    background-color: black;
+}
+.main nav{
+    max-width:75vw;
+    justify-content: space-between;
+    margin : auto;
+    display: flex;
+    align-items: center;
+    height: 62px;
+}
+nav img{
+    width:114px;
+    position: relative;
+    z-index: 10;
+}
+nav button{
+    position: relative;
+    z-index: 10;
+}
+
+.herotext{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    height: 60.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    gap:23px; 
+    padding: 0 23px;
+    text-align: center;
+}
+.herotext> :first-child{
+    font-weight: bolder;
+    font-size: 40px;
+}
+.herotext> :nth-child(2){
+    font-weight: 400;
+    font-size: 24px;
+}
+.herotext> :nth-child(3){
+    font-weight: 400;
+    font-size: 20;
+}
+.seperation{
+    height: 03px;
+    background-color: rgb(65, 64, 64);
+}
+.btn{
+    height: 40px;
+    width: 70px;
+    padding: 5px 7px;
+    font-weight: 100;
+    background-color: transparent;
+    color: rgb(214, 214, 214);
+    border: 2px solid rgb(110, 107, 107);
+    border-radius: 3px;
+    margin-right: 10px;
+}
+.red-btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 60px;
+    width: 13vw;
+    background-color: red;
+    border: transparent;
+    font-weight: 700;
+    padding: 7px 24px;
+    font-size: 20px;
+    border-radius: 5px;
+
+}
+.red-btn span{
+    margin-bottom: 5px;
+}
+.red-btn-sm{
+    font-weight: 900;
+    height: 40px;
+    width: 70px;
+    background-color: red;
+    border: transparent;
+
+}
+.red-btn-sm:hover{
+    cursor: pointer;
+    background-color: rgb(175, 17, 17);
+}
+.red-btn:hover{
+    cursor: pointer;
+    background-color: rgb(175, 17, 17);
+}
+.main input{
+    height: 45px;
+    width: 30vw;
+    margin-right: 8px;
+    padding: 7px 22px 7px 2px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 1px solid rgb(110, 107, 107);
+    background-color: transparent;
+}
+.entertext{
+    display: flex;
+}
+.first{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 65vw;
+    margin: auto;
+    gap: 10px;
+    margin-top: 7vh;
+    margin-bottom: 7vh;
+}
+
+
+.secImg{
+    position: relative;
+}
+.secImg img{
+    width: 30vw;
+    position: relative;
+    z-index: 10;
+}
+.secImg video{
+    width: 86%;
+    position: absolute;
+    top: 51px;
+    right: 0;
+    z-index: -10;
+}
+section.first > div{
+    display: flex;
+    flex-direction: column;
+}
+section.first > div :nth-child(1){
+    font-size: 35px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+section.first > div :nth-child(2){
+    font-size: 18px;
+}
+
+.third video{
+    height:45%;
+    width:100%;
+}
+.faq{
+    color: white;
+    background-color: black;
+    padding: 35px;
+}
+.faq h2{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 34px;
+}
+.faq span{
+    font-size: 3.7vh;
+    padding-top: 3px;
+}
+
+svg path{
+    scale: 110%;
+    color:white;
+}
+.faqbox{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(53, 52, 52);
+    padding: 27px;
+    width: 74vw;
+    margin: 9px auto;
+    cursor: pointer;
+}
+.faqbox svg{
+    scale: 120%;
+}
+.faqbox:hover{
+    background-color: #414141;
+}
+footer{
+    max-width: 80vw;
+    margin: auto;
+    color: #696666;
+    padding: 34px; 
+}
+footer .question{
+    padding: 34px 0px;
+}
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: #696666;
+}
+.footer a{
+    font-size: 14px;
+    text-decoration: underline;
+    color: #696666;
+}
+.footer a:hover{
+    color: red;
+}
+.footer-item{
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+.foot-sign{
+    max-width: 60vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.sign-letter{
+    padding:20px;
+    color: white;
+}
+.foot-sign .entertext{
+    padding-bottom: 20px;
+}
+.foot-sign input{
+    width:40vw;
+} 
+
+footer button{
+    margin-top: 22px ;
+}
+footer h5{
+    margin-top: 22px;
+    margin-bottom: 60px;
+    font-size: 14px;
+}
